@@ -1,0 +1,81 @@
+#Code I wanted to keep just in case
+
+	/*for (int i = 0; i < matrixSize; i++)
+	{
+		for (int j = 0; j < matrixSize; j++)
+		{
+			matrix[i][j] = 0;
+			int a = 0;
+		}
+	}
+	//Used for printing map values
+	//Found @ http://stackoverflow.com/questions/14070940/c-printing-out-map-values
+	/*for (auto elem : dict)
+	{
+		std::cout << elem.first << " "<<elem.second <<"\n";
+	}*/
+	
+	/*while (!input.eof())
+	{
+		int first=0;
+		int second=0;
+		char ch;
+		input.get(ch);
+		for (auto elem : dict)
+		{
+			if (elem.second == ch)
+			{
+				first=elem.first;
+				
+			}
+		}
+		input.ignore();
+		//first = dict.find(ch)->first;
+		input.get(ch);
+		for (auto elem : dict)
+		{
+			if (elem.second == ch)
+			{
+				second = elem.first;
+
+			}
+		}
+		matrix[first][second] = 1;
+		input.ignore();
+	}*/
+
+	/*for (int i = 0; i < matrixSize; i++)
+	{
+		for (int j = 0; j < matrixSize; j++)
+		{
+
+			cout << matrix[i][j] << " ";
+		}
+		cout << endl;
+	}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+	void MatrixOps::listToMatrix(map<int, char>dict, list<Node*> V)
+{
+	//TODO
+	int **newmatrix = new int*[matrixSize];
+	for (int i = 0; i < matrixSize; ++i)
+		newmatrix[i] = new int[matrixSize];
+	for (int i = 0; i < matrixSize; i++)
+	{
+		for (int j = 0; j < matrixSize; j++)
+		{
+			newmatrix[i][j] = 0;
+		}
+	}
